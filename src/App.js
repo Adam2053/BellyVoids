@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ShopPage from "./Pages/ShopPage";
+import ProductPage from "./Pages/ProductPage";
+import NotFound from "./Pages/NotFound";
+import PortalPage from "./Pages/PortalPage";
+import ScrollToTop from "./components/Scroll";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={HomePage} exact />
+        <Route path="/home" Component={HomePage} exact />
+        <Route path="/shop" Component={ShopPage} />
+        <Route path="/products/:proId" Component={ProductPage} />
+        <Route path="/portal" Component={PortalPage} />
+        <Route path="*" Component={NotFound} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,158 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: #999999 !important;
+    background-color: #1A1A1A;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    height: 18rem;
+    width: 100%;
+}
+
+.underline{
+    border-bottom: 1px solid #20B526;
+    font-size: .8rem;
+}
+
+.top{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+}
+
+.left-f{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    width: 30%;
+    line-height: 2;
+    align-items: start;
+    height: 20rem;
+    justify-content: center;
+}
+.right-f{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    line-height: 2;
+}
+
+.helps{
+    display: flex;
+    flex-direction: column;
+}
+
+.proxy{
+    display: flex;
+    flex-direction: column;
+}
+
+.comp{
+    color: white;
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 16px;
+}
+
+#gry{
+    color: #999999;
+}
+
+.logo-f{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+}
+
+.helps>a,.proxy>a{
+    text-decoration: none;
+    color: #999999;
+}
+
+.helps>span,.proxy>span{
+    color: white;
+}
+
+.bottom{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #999999;
+    height: 3rem;
+}
+
+.right-b>img{
+    padding: 0 0.1rem ;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+    .top{
+        flex-direction: column;
+        width: 100vw;
+        margin-bottom: 34px;
+    }
+    .footer{
+        height: max-content;
+        overflow: hidden;
+    }
+
+    .left-f{
+        width: 100vw;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .comp{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #gry{
+        padding: 0 0.4rem;
+    }
+
+    .underline{
+        font-size: 0.6rem;
+        width: max-content !important;
+
+    }
+
+    .right-f{
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+
+    .bottom{
+        width: 100vw;
+        height: max-content;
+        font-size: 0.5rem !important;
+    }
+
+    .right-b{
+        display: flex;
+
+    }
+
+    .right-b>img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+}
+
+
+

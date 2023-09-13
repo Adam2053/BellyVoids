@@ -1,0 +1,111 @@
+.fc{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.feat-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.feat-1>img{
+    width:4rem;
+    height: 4rem;
+}
+
+.lc{
+    /* background-color: grey; */
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    height: max-content;
+    border-radius: 1rem;
+    margin: 5rem;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 8px 2px rgba(153, 153, 153, 0.4);
+}
+
+.rc{
+    width: 60rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: grey; */
+    border-radius: 2rem;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 8px 2px rgba(153, 153, 153, 0.4);
+}
+
+.br{
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+}
+
+.btn-form{
+    width: 10rem;
+    background-color: #00B207;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+    .fc{
+        flex-direction: column;
+    }
+
+    .lc{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    .feat-1>img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .rc{
+        width: 80vw;
+        padding: 1rem 1rem;
+    }
+
+    .rc>p{
+        width: auto !important;
+    }
+
+    #imp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form>input{
+        width: 20%;
+    }
+
+    #phone{
+        width: 100% !important;
+        margin: 0 !important;
+        margin-top: 1rem !important;
+        
+    }
+
+    #phone2{
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+}
+
